@@ -40,10 +40,10 @@ function guessNumber(event){
 
 submitBtn.addEventListener('click', guessNumber);
 
-let acc = 0;
-function HowManyTries (tries) {
-    for (let i = 0; i < 30; i++) {
-        acc += tries[i];
-        triesCounter.innerHTML = acc;
-    }
-}
+// let acc = 0;
+// function HowManyTries (tries) {
+//     for (let i = 0; i < 30; i++) {
+//         acc += tries[i];
+//         triesCounter.innerHTML = acc;
+//     }
+// }
