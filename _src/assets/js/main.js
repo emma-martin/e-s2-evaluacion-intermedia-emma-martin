@@ -20,13 +20,15 @@ function guessNumber(event){
     console.log(randomNum);
     event.preventDefault();
 
-    if(inputNumber.innerHTML === randomNum){
+    let numberEntered = inputNumber.value;
+
+    if(numberEntered === randomNum){
         answersBox.innerHTML = `You made it! The number is ${randomNum}`;
     } 
-    else if (inputNumber.innerHTML > randomNum){
+    else if (numberEntered > randomNum){
         answersBox.innerHTML = `Too close but too high! The number is ${randomNum}`;
     }
-    else if (inputNumber.innerHTML < randomNum){
+    else if (numberEntered < randomNum){
         answersBox.innerHTML = `Too close but too low! The number is ${randomNum}`;
     }
     else {
@@ -35,3 +37,7 @@ function guessNumber(event){
 }
 
 submitBtn.addEventListener('click', guessNumber);
+
+// function HowManyTries () {
+//     for()
+// }
