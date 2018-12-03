@@ -3,4 +3,13 @@ body {
   height: 100vh;
 }
 
+.meter-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: violet;
+  height: 200px;
+  width: 250px;
+}
+
 /*# sourceMappingURL=main.css.map */
