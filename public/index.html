@@ -3,16 +3,31 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Adalab Web Starter Kit</title>
+        <title>Guess the Number</title>
         <link rel="icon" href="favicon.png" />
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     
     <body>
         <div class="page">
-            <header class="page__header">Header</header>
-            <main class="page__main">Main</main>
+            <header class="page__header">
+                 <h1>Adivina el número</h1>
+
+            </header>
+            <main class="page__main">
+                <div class="meter-box">
+                    <p class="meter-counter"></p>
+                </div>
+                <form>
+                    <label for="input">Introduce aquí el número</label>
+                    <input class="input" type="num" id="input"
+                    name="number">
+                    <input type="submit" value="Prueba" class="btn-send">
+                </form>
+                <p class="info">Escribe un número y dale a Prueba</p>
+            </main>
         </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
     </body>
 
 </html>
