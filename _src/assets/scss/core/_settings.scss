@@ -3,6 +3,10 @@ $color-secondary: red;
 $color-tertiary: blue;
 $color-font: black;
 
+//breakpoint
+$screen-md-min: 768px;
+
+
 @mixin fontStyle {
     color: $color-font;
 	font-size: 1.4em;
@@ -16,8 +20,10 @@ $color-font: black;
     margin-bottom: 30px;
 }
 
-@mixin responsiveBox {
-    width: 200px;
-    height: 30px;
-    margin-bottom: 30px;
-}
+// @mixin responsiveBox {
+//     @media (min-width: #{$screen-md-min}) {
+//         width: 200px;
+//         height: 30px;
+//         margin-bottom: 30px;
+//     }
+// }
