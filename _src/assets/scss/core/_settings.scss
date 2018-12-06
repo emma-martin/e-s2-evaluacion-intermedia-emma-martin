@@ -1,1 +1,17 @@
-$color-white: #f3f4f5;
+$color-primary: rgb(179, 170, 170);
+$color-secondary: red;
+$color-tertiary: blue;
+$color-font: black;
+
+@mixin fontStyle {
+    color: $color-font;
+	font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@mixin formBox {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+}

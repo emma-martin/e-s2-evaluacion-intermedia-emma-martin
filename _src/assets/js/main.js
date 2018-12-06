@@ -10,12 +10,14 @@ function getRandomNumber(max) {
 const randomNum = getRandomNumber(100);
     console.log(randomNum);
 let tries = 0; 
+triesCounter.innerHTML = `${tries}`;
+answersBox.innerHTML = `Insert a number and give it a try!`;
 function guessNumber(event){
     event.preventDefault();
     let numberEntered = parseInt(inputNumber.value);
     console.log(numberEntered);
     tries ++;
-    triesCounter.innerHTML = `You've tried ${tries} times`;
+    triesCounter.innerHTML = `${tries}`;
     if(numberEntered === randomNum){
         answersBox.innerHTML = `You made it! The number is ${randomNum} and it only took you ${tries} attempts`;
     } 
@@ -29,7 +31,4 @@ function guessNumber(event){
         answersBox.innerHTML = `Better try another game`;
     }
 }
-
-
-
 submitBtn.addEventListener('click', guessNumber);

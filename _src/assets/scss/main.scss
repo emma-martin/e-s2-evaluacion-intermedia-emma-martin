@@ -1,14 +1,66 @@
 @import 'core/settings';
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
 	height: 100vh;
+	background-color: $color-primary;
+	@include fontStyle;
+
 }
 
 .meter-box{
-	position: fixed;
-	top: 0;
+	position: absolute;
+	top: 20px;
 	right: 0;
-	background-color: violet;
-	height: 200px;
-	width: 250px;
+	height: 100px;
+	width: 100px;
+	color: $color-secondary;
+	font-weight: bolder;
+	font-size: 80px;
+}
+
+.page__header {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.form-field {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+}
+
+.label-style {
+	@include formBox;
+}
+
+.input {
+	@include formBox;
+}
+
+.btn-send{
+	@include formBox;
+	@include fontStyle;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.input{
+	@include fontStyle;
+}
+.result-box{
+	color: $color-tertiary;
+	border: 1px solid $color-tertiary;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 0 30px;
+	height: 50px;
+	padding-top: 10px;
 }
