@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     
     <head>
         <meta charset="UTF-8">
@@ -11,18 +11,22 @@
     <body>
         <div class="page">
             <header class="page__header">
-                 <h1>Adivina el número</h1>
+                 <h1 class="header-title">Guess the number I'm thinking</h1>
 
             </header>
             <main class="page__main">
                 <div class="meter-box">
                     <p class="meter-counter"></p>
                 </div>
-                <label for="input">Introduce aquí el número</label>
-                <input class="input" type="num" id="input"
-                name="number">
-                <input type="submit" value="Prueba" class="btn-send">
-                <p class="info"></p>
+                <form action="/" method="post" class="form-field">
+                    <label for="input" class="label-style">Insert a random number:</label>
+                    <input placeholder="Type the number here"
+                    class="input" type="num" id="input" name="number">
+                    <button type="submit" value="Check" class="btn-send">Check</button>
+                </form>
+                <div class="result-box">
+                    <p class="info"></p>
+                </div>
             </main>
         </div>
         <script type="text/javascript" src="assets/js/main.js"></script>
