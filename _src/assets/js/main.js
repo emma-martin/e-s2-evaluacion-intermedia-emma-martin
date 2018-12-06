@@ -47,3 +47,6 @@ submitBtn.addEventListener('click', guessNumber);
 //         triesCounter.innerHTML = acc;
 //     }
 // }
+
+
+//todo lo que traemos de html, aunque sea value, hay que parseInt
