@@ -5,12 +5,18 @@ $color-font: black;
 
 @mixin fontStyle {
     color: $color-font;
-	font-size: 18px;
+	font-size: 1.4em;
     font-family: sans-serif;
     text-align: center;
 }
 
 @mixin formBox {
+    width: 550px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+@mixin responsiveBox {
     width: 200px;
     height: 30px;
     margin-bottom: 30px;

@@ -14,31 +14,33 @@ body {
 
 .meter-box{
 	position: absolute;
-	top: 20px;
-	right: 0;
+	top: 60px;
+	right: 10px;
 	height: 100px;
 	width: 100px;
 	color: $color-secondary;
 	font-weight: bolder;
-	font-size: 80px;
+	font-size: 4em;
 }
 
 .page__header {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 80px;
 }
 
 .form-field {
-	height: 400px;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	align-content: space-around;
+	@include fontStyle;
 }
 
 .label-style {
 	@include formBox;
+	@include fontStyle;
 }
 
 .input {
@@ -56,11 +58,15 @@ body {
 }
 .result-box{
 	color: $color-tertiary;
-	border: 1px solid $color-tertiary;
+	border: 2px solid $color-tertiary;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	margin: 0 30px;
-	height: 50px;
-	padding-top: 10px;
+	height: 70px;
+	padding-top: 15px;
+}
+
+.info{
+	font-size: 1.6em;
 }

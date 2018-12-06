@@ -9,29 +9,29 @@ body {
   height: 100vh;
   background-color: #b3aaaa;
   color: black;
-  font-size: 18px;
+  font-size: 1.4em;
   font-family: sans-serif;
   text-align: center;
 }
 
 .meter-box {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 60px;
+  right: 10px;
   height: 100px;
   width: 100px;
   color: red;
   font-weight: bolder;
-  font-size: 80px;
+  font-size: 4em;
 }
 
 .page__header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .form-field {
-  height: 400px;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,26 +47,34 @@ body {
   align-items: center;
   -ms-flex-line-pack: distribute;
   align-content: space-around;
+  color: black;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .label-style {
-  width: 200px;
-  height: 30px;
+  width: 550px;
+  height: 80px;
   margin-bottom: 30px;
+  color: black;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .input {
-  width: 200px;
-  height: 30px;
+  width: 550px;
+  height: 80px;
   margin-bottom: 30px;
 }
 
 .btn-send {
-  width: 200px;
-  height: 30px;
+  width: 550px;
+  height: 80px;
   margin-bottom: 30px;
   color: black;
-  font-size: 18px;
+  font-size: 1.4em;
   font-family: sans-serif;
   text-align: center;
   border-radius: 5px;
@@ -75,14 +83,14 @@ body {
 
 .input {
   color: black;
-  font-size: 18px;
+  font-size: 1.4em;
   font-family: sans-serif;
   text-align: center;
 }
 
 .result-box {
   color: blue;
-  border: 1px solid blue;
+  border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,8 +100,12 @@ body {
   -ms-flex-line-pack: center;
   align-content: center;
   margin: 0 30px;
-  height: 50px;
-  padding-top: 10px;
+  height: 70px;
+  padding-top: 15px;
+}
+
+.info {
+  font-size: 1.6em;
 }
 
 /*# sourceMappingURL=main.css.map */
